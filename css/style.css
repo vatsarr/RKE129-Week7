@@ -1,5 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  font-size: 2rem;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 75%;
+}
+
+.container div {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 480px) {
+  .tablet {
+    display: none;
+  }
+  .laptop {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .container {
+    background-color: rgb(0, 100, 0);
+    color: bisque;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .smartphone {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+
+  .container {
+    background-color: darkblue;
+    color: bisque;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tablet {
+    display: none;
+  }
+  .laptop {
+    display: block;
+  }
+  .container {
+    background-color: darkred;
+    color: bisque;
+  }
+}
+
+@media (min-width: 1200px) {
+  .laptop {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .container {
+    background-color: darkgray;
+    color: antiquewhite;
+    width: 75%;
+  }
 }
